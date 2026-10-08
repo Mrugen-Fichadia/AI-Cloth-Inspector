@@ -6,10 +6,12 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-dotenv.config();
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Load environment variables from server/.env and root .env
+dotenv.config({ path: path.join(__dirname, '.env') });
+dotenv.config();
 const DATA_DIR = path.join(__dirname, 'data');
 const DATASET_FILE = path.join(DATA_DIR, 'dataset.json');
 const MODELS_FILE = path.join(DATA_DIR, 'models.json');
@@ -692,6 +694,16 @@ app.delete('/api/history', (req, res) => {
   saveHistory(inspectionHistory);
   res.json({ success: true, message: 'Inspection history cleared' });
 });
+
+// Serve static frontend in production
+const clientDist = path.join(__dirname, '../client/dist');
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.join(clientDist, 'index.html'));
+  });
+}
 
 // Start Server
 app.listen(PORT, () => {
