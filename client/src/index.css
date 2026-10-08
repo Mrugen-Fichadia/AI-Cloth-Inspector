@@ -1,0 +1,92 @@
+/* ==========================================================================
+   WABRIC DESIGN SYSTEM - NOTO SANS TYPOGRAPHY & ENTERPRISE LIGHT THEME
+   ========================================================================== */
+
+:root {
+  /* Scale & Viewport Baseline */
+  --app-scale: 1;
+  --viewport-height: 100vh;
+
+  /* Typography */
+  --font-main: 'Noto Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Brand Colors */
+  --brand-blue: #0A5DE9;
+  --brand-blue-hover: #084cc0;
+  --brand-blue-light: #EEF4FF;
+  --brand-dark: #111827;
+  --brand-gray-dark: #374151;
+  --brand-gray: #6B7280;
+  --brand-gray-light: #9CA3AF;
+  --brand-border: #E5E7EB;
+  --brand-border-dark: #111827;
+  --brand-bg: #FFFFFF;
+  --brand-bg-subtle: #F9FAFB;
+  --brand-bg-card: #FFFFFF;
+
+  /* Status Accents */
+  --emerald-pass: #10B981;
+  --ruby-reject: #EF4444;
+  --amber-warning: #F59E0B;
+  --purple-accent: #7C3AED;
+  --purple-light: #F5F3FF;
+
+  /* Radius & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-elevated: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--brand-bg);
+  color: var(--brand-dark);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: var(--font-main);
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom Minimal Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F4F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}

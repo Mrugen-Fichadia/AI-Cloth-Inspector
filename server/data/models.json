@@ -1,0 +1,143 @@
+[
+  {
+    "id": "model-1791444459100",
+    "name": "Wabric-Recipe-1-v1.9094",
+    "version": "1.6.0",
+    "type": "Fine-Tuned-Gemini-Vision",
+    "accuracy": 98.5,
+    "loss": 0.049,
+    "epochs": 15,
+    "classes": [
+      "Hole",
+      "Tear",
+      "Oil Stain",
+      "Weaving Flaw",
+      "Loose Thread",
+      "Broken Yarn",
+      "Fabric Defects"
+    ],
+    "trainedAt": "2026-10-08T07:27:39.100Z",
+    "isActive": true,
+    "sampleCount": 80
+  },
+  {
+    "id": "model-1791443305862",
+    "name": "Wabric-Recipe-1-v1.5850",
+    "version": "1.5.0",
+    "type": "Fine-Tuned-Gemini-Vision",
+    "accuracy": 97.9,
+    "loss": 0.053,
+    "epochs": 15,
+    "classes": [
+      "Hole",
+      "Tear",
+      "Oil Stain",
+      "Weaving Flaw",
+      "Loose Thread",
+      "Broken Yarn",
+      "Fabric Defects"
+    ],
+    "trainedAt": "2026-10-08T07:08:25.862Z",
+    "isActive": false,
+    "sampleCount": 80
+  },
+  {
+    "id": "model-1791443293101",
+    "name": "Wabric-Recipe-1-v1.0258",
+    "version": "1.4.0",
+    "type": "Fine-Tuned-Gemini-Vision",
+    "accuracy": 96.5,
+    "loss": 0.04,
+    "epochs": 15,
+    "classes": [
+      "Hole",
+      "Tear",
+      "Oil Stain",
+      "Weaving Flaw",
+      "Loose Thread",
+      "Broken Yarn",
+      "Fabric Defects"
+    ],
+    "trainedAt": "2026-10-08T07:08:13.101Z",
+    "isActive": false,
+    "sampleCount": 80
+  },
+  {
+    "id": "model-1791439959692",
+    "name": "Wabric-Recipe-1-v1.9686",
+    "version": "1.3.0",
+    "type": "Edge-Vision-Classifier",
+    "accuracy": 96.1,
+    "loss": 0.045,
+    "epochs": 15,
+    "classes": [
+      "Hole",
+      "Tear",
+      "Oil Stain",
+      "Weaving Flaw",
+      "Loose Thread",
+      "Fabric Defects"
+    ],
+    "trainedAt": "2026-10-08T06:12:39.692Z",
+    "isActive": false,
+    "sampleCount": 79
+  },
+  {
+    "id": "model-1791437659198",
+    "name": "Wabric-Test-Recipe-1-v1.9158",
+    "version": "1.2.0",
+    "type": "Fine-Tuned-Gemini-Vision",
+    "accuracy": 98.4,
+    "loss": 0.038,
+    "epochs": 15,
+    "classes": [
+      "Hole",
+      "Tear",
+      "Oil Stain",
+      "Weaving Flaw",
+      "Loose Thread",
+      "Fabric Defects"
+    ],
+    "trainedAt": "2026-10-08T05:34:19.198Z",
+    "isActive": false,
+    "sampleCount": 107
+  },
+  {
+    "id": "model-1791412414544",
+    "name": "Wabric-Cotton-v1.1.0",
+    "version": "1.1.0",
+    "type": "Fine-Tuned-Gemini-Vision",
+    "accuracy": 96.4,
+    "loss": 0.052,
+    "epochs": 15,
+    "classes": [
+      "Hole",
+      "Tear",
+      "Oil Stain",
+      "Weaving Flaw",
+      "Loose Thread"
+    ],
+    "trainedAt": "2026-10-07T22:33:34.544Z",
+    "isActive": false,
+    "sampleCount": 4
+  },
+  {
+    "id": "model-base-v1",
+    "name": "Wabric-Fabric-Base (Pretrained)",
+    "version": "1.0.0",
+    "type": "Hybrid-Gemini-Vision",
+    "accuracy": 94.6,
+    "loss": 0.082,
+    "epochs": 20,
+    "classes": [
+      "Hole",
+      "Tear",
+      "Oil Stain",
+      "Weaving Flaw",
+      "Loose Thread"
+    ],
+    "trainedAt": "2026-10-06T15:13:50.885Z",
+    "isActive": false,
+    "sampleCount": 42
+  }
+]
